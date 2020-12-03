@@ -1,3 +1,4 @@
+// Model for Country Details Page.
 export interface Details {
   flag: string;
   name: string;

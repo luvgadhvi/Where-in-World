@@ -11,12 +11,13 @@ import { Details } from '../models/details'
 })
 export class CountryDetailsComponent implements OnInit {
   countryName;
-  countryDetails:Details;
+  countryDetails: Details;
   faArrowLeft = faArrowLeft;
   constructor(private route: ActivatedRoute, private http: HttpService) { }
 
   ngOnInit(): void {
     this.countryName = this.route.snapshot.params['country']
+    //This will Receive the route parameters and load data accordingly.
     this.http.getCountry(this.countryName).subscribe(data => {
       this.countryDetails = data[0]
       console.log(this.countryDetails)

@@ -1,3 +1,4 @@
+//Home page card Components Model
 export interface Country {
   flag: string;
   name: string;

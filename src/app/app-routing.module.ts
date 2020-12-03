@@ -5,7 +5,7 @@ import { ErrorPageComponent } from './errorpage/errorpage.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 
-
+//Route Path Definition
 const routes: Routes = [
   {
     path: '',

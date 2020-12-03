@@ -12,7 +12,7 @@
 .filter-input {
   width: 30%;
   height: 50px;
-  background: hsl(0, 0%, 100%);
+  background: inherit;
   margin-left: 40px;
 
   @media (max-width:768px) {
@@ -27,6 +27,7 @@
   height: 50px;
   background: hsl(0, 0%, 100%);
   margin-right: 15px;
+  background: inherit;
 
   @media (max-width:768px) {
     width: 100%;
@@ -46,6 +47,8 @@
 .search-input {
   border: none;
   width: 80%;
+  background: inherit;
+  color: inherit;
   font-size: 16px;
 }
 
@@ -60,14 +63,18 @@
 
 .dropdown-text {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  background: inherit;
+  color: inherit;
 }
 
 .region-control {
   border: none;
   width: 100%;
   font-size: 16px;
-  margin: 15px
+  margin: 15px;
+  background: inherit;
+  color: inherit;
 }
 
 .region-control:focus {

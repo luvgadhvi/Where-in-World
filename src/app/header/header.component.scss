@@ -1,18 +1,12 @@
 header {
-  position: sticky;
   width: 100%;
+  z-index: 1000;
   top: 0;
   height: 80px;
-  background: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-
-.header-container {}
-
-.header-mode {}
 
 .icon {
   margin-right: 10px;
@@ -32,10 +26,9 @@ header {
 
 .header-mode {
   margin: 25px;
+
   @media (max-width:768px) {
     font-size: 16px;
     margin: auto;
   }
 }
-
-.header-mode-tex {}

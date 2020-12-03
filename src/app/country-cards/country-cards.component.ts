@@ -16,15 +16,21 @@ export class CountryCardsComponent implements OnInit {
 
   }
   ngOnInit() {
+    //API call to get all countries details.
     this.http.getAllCountry()
       .subscribe((data: Country) => {
         this.allCountryList = data;
         this.filterCountryList = data;
       });
+    //Service to Receive Value from Filter component.
     this.filter.receivedFilter.subscribe((filter: object) => {
       this.onFilterChange(filter)
     });
   }
+  /*
+  This function will Filter out the List according to search value and selected region
+  received from Service and display the value accordingly.
+  */
 
   onFilterChange(filter) {
     if (filter.region === '' && filter.searchValue === '') {

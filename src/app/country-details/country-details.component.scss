@@ -1,9 +1,6 @@
-%flex-direction-col {
-  flex-direction: column;
-}
-
 .details-wrapper {
   margin: 20px;
+  height: 100vh;
 }
 
 .details-back {
@@ -14,7 +11,6 @@
   span {
     padding: 10px 20px;
     border: 1px solid #ccc;
-    background: hsl(0, 0%, 100%);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   }
 }
@@ -45,16 +41,22 @@
   span {
     font-weight: 400;
   }
+
+  h2 {
+    padding: 20px 0px;
+  }
 }
 
 .inner-details {
   display: flex;
+
   .inner-right {
     margin-left: 25px;
   }
 
   @media (max-width:768px) {
     flex-direction: column;
+
     .inner-right {
       margin-left: 0px;
     }
@@ -77,12 +79,12 @@
   span {
     display: inline-block;
     border: 1px solid #ccc;
-    background: hsl(0, 0%, 100%);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     margin-left: 10px;
     padding: 5px;
     text-align: center;
     cursor: pointer;
+
     @media (max-width:768px) {
       margin-bottom: 10px;
     }
